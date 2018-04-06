@@ -1,5 +1,5 @@
 # Guy's World Famous 'Za
-#### _A site that takes a size of a pizza and the selected toppings and calculates a pie price., April, 2018_
+#### _A site that takes a size of a pizza and the selected toppings and calculates a pie price., April, 6 2018_
 
 ### By Matt Dowdney
 
@@ -8,7 +8,7 @@
 
 ### Specifications
 
-#####_Program reports a pie size price
+##### _Program reports a pie size price
 Example Input: "Medium"
 Example Output: "$10"
 
