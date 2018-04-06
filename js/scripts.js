@@ -32,15 +32,10 @@ $(document).ready(function(){
       var topNameCostArray = topNameCost.split(" ");
       toppingArrayName.push(topNameCostArray[0]);
       toppingArrayCost.push(parseInt(topNameCostArray[1]));
-      console.log(toppingArrayName);
-      console.log(toppingArrayCost);
-
     });
 
     var pie = new Pizza(sizeName, sizeCost, toppingArrayName, toppingArrayCost);
     var piePrice = pie.price(pie.toppingNumber);
-    $("#price").text(piePrice);
-    console.log(pie);
-    // "A" + pie.sizeWord + "with" + pie.toppingWord + "costs $"
+    $("#price").text(  "A " + pie.sizeWord + " with " + pie.toppingWord + " costs $" + piePrice);
   });
 });
