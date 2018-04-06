@@ -1,9 +1,10 @@
 //Business Logic
-function Pizza (sizeWord, sizeNumber, toppingWord, toppingNumber){
+function Pizza (sizeWord, sizeNumber, toppingWord, toppingNumber, requests){
   this.sizeWord = sizeWord;
   this.sizeNumber = sizeNumber;
   this.toppingWord = toppingWord;
   this.toppingNumber = toppingNumber;
+  this.requests = requests;
 }
 
 Pizza.prototype.price = function(array){
@@ -43,21 +44,23 @@ $(document).ready(function(){
       toppingArrayName.push(topNameCostArray[0]);
       toppingArrayCost.push(parseInt(topNameCostArray[1]));
     });
-
-    var pie = new Pizza(sizeName, sizeCost, toppingArrayName, toppingArrayCost);
+    var specialRequest = $("#special").val();
+    var pie = new Pizza(sizeName, sizeCost, toppingArrayName, toppingArrayCost,specialRequest);
     var piePrice = pie.price(pie.toppingNumber);
-    $("#price").text(  "A " + pie.sizeWord + " with " + pie.toppingWord + " costs $" + piePrice);
-    $(".catalog").append('<li>' + pie.sizeWord + ' - ' + pie.toppingWord + ' ' + '$' + piePrice);
+    $("#price").text(  "A " + pie.sizeWord + " with " + pie.toppingWord.join(', ') + " costs $" + piePrice);
+    $(".catalog").append('<li>' + pie.sizeWord + ' - ' + pie.toppingWord.join(', ') + '<br> ' + pie.requests + ' $' + piePrice);
     $("#hide").show();
     $("#checkout").show();
     $("#cart").show();
     basketArray.push(piePrice);
     total = basketSum(basketArray);
-    console.log(total);
     })
+
   $(".ordermore").click(function(){
     $("#price").text(" ");
+    $("form#pie-order").trigger("reset");
   });
+
   $("#checkout").click(function(){
     $("#total").show();
     $("#total").text("Your grand total is $"+total);
