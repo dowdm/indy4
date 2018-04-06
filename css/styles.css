@@ -1,0 +1,50 @@
+body {
+  background-image: url("../img/background.png");
+  background-size: cover;
+}
+button {
+  border-radius: 25px;
+}
+.form-check{
+  background-color: green;
+  border-radius: 25px;
+  padding: 20px;
+}
+.form-group{
+  background-color: green;
+  border-radius: 25px;
+  padding: 20px;
+}
+h1 {
+  color: black;
+  font-family: chalkduster;
+  font-size: 80px;
+  text-align: center;
+}
+h3 {
+  font-family: chalkboard;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+input {
+  margin-right: 10px;
+}
+label {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+#price{
+  display: none;
+  text-align: center;
+}
+#title {
+  display: block;
+  float: left;
+  height: 240px;
+}
+#topjumbo {
+  background-color: green;
+  border-radius: 25px;
+}

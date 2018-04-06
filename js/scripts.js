@@ -1,3 +1,4 @@
+//Business Logic
 function Pizza (sizeCost, toppingCost){
   this.sizeCost = sizeCost;
   this.toppingCost = toppingCost;
@@ -10,10 +11,9 @@ Pizza.prototype.price = function(array){
     console.log(arrayTotal);
   }
   return this.sizeCost + arrayTotal;
-  // console.log(arrayTotal);
-  // console.log(this.sizeCost);
   }
 
+//UI Logic
 $(document).ready(function(){
   $("form#pie-order").submit(function(event){
     event.preventDefault();
@@ -26,7 +26,6 @@ $(document).ready(function(){
 
     var pie = new Pizza(pieSizeCost, toppingArray);
     var piePrice = pie.price(pie.toppingCost);
-    console.log(pie);
-    console.log(piePrice);
+    $("#price").text("This pie'll cost ya " + piePrice + " bucks.")
   });
 });
