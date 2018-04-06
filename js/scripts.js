@@ -1,4 +1,5 @@
 //Business Logic
+var basketArray = [];
 function Pizza (sizeWord, sizeNumber, toppingWord, toppingNumber){
   this.sizeWord = sizeWord;
   this.sizeNumber = sizeNumber;
@@ -10,10 +11,17 @@ Pizza.prototype.price = function(array){
   var arrayTotal = 0;
   for (var i = 0; i < array.length; i++) {
     arrayTotal += array[i];
-    console.log(arrayTotal);
   }
   return this.sizeNumber + arrayTotal;
   }
+
+function basketSum(array) {
+  var basketTotal = 0;
+  for (var i = 0; i < array.length; i++) {
+    basketTotal += array[i];
+  }
+  return basketTotal;
+}
 
 
 //UI Logic
@@ -37,5 +45,8 @@ $(document).ready(function(){
     var pie = new Pizza(sizeName, sizeCost, toppingArrayName, toppingArrayCost);
     var piePrice = pie.price(pie.toppingNumber);
     $("#price").text(  "A " + pie.sizeWord + " with " + pie.toppingWord + " costs $" + piePrice);
+    basketArray.push(piePrice);
+    var total = basketSum(basketArray);
+    console.log(total);
   });
 });
