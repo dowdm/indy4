@@ -1,14 +1,14 @@
-# Pizza Delivery
+# Guy's World Famous 'Za
 #### _A site that takes a size of a pizza and the selected toppings and calculates a pie price., April, 2018_
 
 ### By Matt Dowdney
 
-###Description
+### Description
 ##### _A site that takes a user defined pizza size and user selected pizza toppings and generates a comp[lete pizza with a custom price tag based on the selections._
 
 ### Specifications
-#####
-_Program reports a pie size price
+
+#####_Program reports a pie size price
 Example Input: "Medium"
 Example Output: "$10"
 
@@ -31,12 +31,12 @@ Example Output:"$30"._
 ##### _No known bugs_
 
 ### Support and contact details:
-#####_Contact Matt at theofficialmatt@gmail.com_
+##### _Contact Matt at theofficialmatt@gmail.com_
 
 ### Technologies Used
 ##### _This site was created using HTML CSS, Bootstrap JavaScript and jQuery_
 
 ### License
-#####_This is Licensed under the MIT License_
+##### _This is Licensed under the MIT License_
 
 _Copyright (c) 2018 Matt Dowdney_
