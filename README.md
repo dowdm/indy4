@@ -8,11 +8,11 @@
 
 ### Specifications
 
-##### * Program reports a pie size price
+* Program reports a pie size price
   * Example Input: "Medium"
   * Example Output: "$10"
 
-* Program reports a pie size with a single topping
+* Program reports a pie size with a single topping price
   * Example Input: "Medium, Pepperoni"
   * Example Output: "$12"
 
@@ -22,7 +22,7 @@
 
 * Program reports multiple size pies with multiple toppings price total
   * Example Input:"Medium, Pepperoni, Mushrooms & Large, Pepperoni, Mushrooms"
-  * Example Output:"$30".
+  * Example Output:"$30"
 
 ### Setup/Installation Requirements
 ##### _Clone this repository to your computer Open index.html in your browser_
