@@ -1,5 +1,4 @@
 //Business Logic
-var basketArray = [];
 function Pizza (sizeWord, sizeNumber, toppingWord, toppingNumber){
   this.sizeWord = sizeWord;
   this.sizeNumber = sizeNumber;
@@ -15,6 +14,8 @@ Pizza.prototype.price = function(array){
   return this.sizeNumber + arrayTotal;
   }
 
+var basketArray = [];
+
 function basketSum(array) {
   var basketTotal = 0;
   for (var i = 0; i < array.length; i++) {
@@ -26,6 +27,7 @@ function basketSum(array) {
 
 //UI Logic
 $(document).ready(function(){
+  var total = 0;
   $("form#pie-order").submit(function(event){
     event.preventDefault();
     var pieSizeVal =$("#size").val()
@@ -45,8 +47,19 @@ $(document).ready(function(){
     var pie = new Pizza(sizeName, sizeCost, toppingArrayName, toppingArrayCost);
     var piePrice = pie.price(pie.toppingNumber);
     $("#price").text(  "A " + pie.sizeWord + " with " + pie.toppingWord + " costs $" + piePrice);
+    $(".catalog").append('<li>' + pie.sizeWord + ' - ' + pie.toppingWord + ' ' + '$' + piePrice);
+    $("#hide").show();
+    $("#checkout").show();
+    $("#cart").show();
     basketArray.push(piePrice);
-    var total = basketSum(basketArray);
+    total = basketSum(basketArray);
     console.log(total);
+    })
+  $(".ordermore").click(function(){
+    $("#price").text(" ");
+  });
+  $("#checkout").click(function(){
+    $("#total").show();
+    $("#total").text("Your grand total is $"+total);
   });
 });

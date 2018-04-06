@@ -17,7 +17,7 @@
       <h3>Pie Specs:</h3>
       <form id="pie-order">
       <div class="row">
-        <div class="col">
+        <div class="col-md-4">
           <div class="form-check">
             <label for="">Pie Size</label>
             <select class="form-control" name="size" id="size">
@@ -28,7 +28,7 @@
             </select>
           </div>
         </div>
-        <div class="col">
+        <div class="col-md-4">
           <div class="form-group">
             <label for="">Normal Stuff</label><br>
             <input type="checkbox" name="toppings" value="Cheese 0">Cheese $0<br>
@@ -38,7 +38,7 @@
             <input type="checkbox" name="toppings" value="Spinach 1">Spinach $1<br>
           </div>
         </div>
-        <div class="col">
+        <div class="col-md-4">
           <div class="form-group">
             <label for="">Fancier Stuff</label><br>
             <input type="checkbox" name="toppings" value="Artichoke 3">Artichoke Heart $3<br>
@@ -52,7 +52,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col-md-4">
           <div class="form-group">
             <label for="">Definitively Fieri</label><br>
             <input type="checkbox" name="toppings" value="BuffChix 2">Buffalo Chicken $2<br>
@@ -62,18 +62,30 @@
             <input type="checkbox" name="toppings" value="Poppers 3">Jalapeno Poppers $3<br>
           </div>
         </div>
-        <div class="col">
+        <div class="col-md-4">
           <div class="form-group">
             <label for="">Special Requests</label>
             <textarea class="form-control" type="text" name="" value=""placeholder="example: Extra Ranch!!!"></textarea>
           </div>
         </div>
       </form>
-        <div class="col">
+        <div class="col-md-4">
           <div class="jumbotron" id="bottomjumbo">
             <h2 id="price"></h2>
           </div>
-          <button type="submit">Order, bro.</button>
+          <button type="submit">Add to cart, bro.</button>
+          <button type="button" name="button" id="hide" class="ordermore">Reset, dude!</button>
+          <button type="button" name="button" id="checkout">Checkout(my frosted tips)</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8" id="cart">
+          <div class="card">
+            <h4>Cart</h4>
+            <ul class="catalog">
+            </ul>
+            <h4 id="total"></h4>
+          </div>
         </div>
       </div>
     </div>
