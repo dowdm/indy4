@@ -16,55 +16,64 @@
       </div>
       <h3>Pie Specs:</h3>
       <form id="pie-order">
-        <div class="row">
-          <div class="col">
-            <div class="form-check">
-              <label for="">Pie Size</label>
-              <select class="form-control" name="size" id="size">
-                <option name="size" value="8">Small (10", $8)<br>
-                <option name="size" value="10">Medium (14", $10)<br>
-                <option name="size" value="12">Large (20", $12)<br>
-                <option name="size" value="14">XL (28", $14)<br>
-              </select>
-            </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-check">
+            <label for="">Pie Size</label>
+            <select class="form-control" name="size" id="size">
+              <option name="size" value="8">Small (10", $8)<br>
+              <option name="size" value="10">Medium (14", $10)<br>
+              <option name="size" value="12">Large (20", $12)<br>
+              <option name="size" value="14">XL (28", $14)<br>
+            </select>
           </div>
-          <div class="col">
-            <div class="form-group">
-              <label for="">Normal Stuff</label><br>
-              <input type="checkbox" name="toppings" value="0">Cheese $0<br>
-              <input type="checkbox" name="toppings" value="2">'Roni $2<br>
-              <input type="checkbox" name="toppings" value="1">Onion $1<br>
-              <input type="checkbox" name="toppings" value="1">Jalapenos $1<br>
-              <input type="checkbox" name="toppings" value="1">Spinach $1<br>
-            </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="">Normal Stuff</label><br>
+            <input type="checkbox" name="toppings" value="0">Cheese $0<br>
+            <input type="checkbox" name="toppings" value="2">'Roni $2<br>
+            <input type="checkbox" name="toppings" value="1">Onion $1<br>
+            <input type="checkbox" name="toppings" value="1">Jalapenos $1<br>
+            <input type="checkbox" name="toppings" value="1">Spinach $1<br>
           </div>
-          <div class="col">
-            <div class="form-group">
-              <label for="">Fancier Stuff</label><br>
-              <input type="checkbox" name="toppings" value="3">Artichoke Heart $3<br>
-              <input type="checkbox" name="toppings" value="3">Grilled Asparagus $3<br>
-              <input type="checkbox" name="toppings" value="2">Feta $2<br>
-              <input type="checkbox" name="toppings" value="2">Sundried Tomato$2<br>
-              <input type="checkbox" name="toppings" value="4">Castelvetrano Olives $4<br>
-              <input type="checkbox" name="toppings" value="4">Shiitake $4<br>
-              <input type="checkbox" name="toppings" value="5">Blackened Mahi $5<br>
-            </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="">Fancier Stuff</label><br>
+            <input type="checkbox" name="toppings" value="3">Artichoke Heart $3<br>
+            <input type="checkbox" name="toppings" value="3">Grilled Asparagus $3<br>
+            <input type="checkbox" name="toppings" value="2">Feta $2<br>
+            <input type="checkbox" name="toppings" value="2">Sundried Tomato$2<br>
+            <input type="checkbox" name="toppings" value="4">Castelvetrano Olives $4<br>
+            <input type="checkbox" name="toppings" value="4">Shiitake $4<br>
+            <input type="checkbox" name="toppings" value="5">Blackened Mahi $5<br>
           </div>
-          <div class="col">
-            <div class="form-group">
-              <label for="">Definitively Fieri</label><br>
-              <input type="checkbox" name="toppings" value="2">Buffalo Chicken $2<br>
-              <input type="checkbox" name="toppings" value="2">Fried Potato Skins $2<br>
-              <input type="checkbox" name="toppings" value="4">BBQ Pork $4<br>
-              <input type="checkbox" name="toppings" value="2">Cheese Whiz $2<br>
-              <input type="checkbox" name="toppings" value="3">Jalapeno Poppers $3<br>
-            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="">Definitively Fieri</label><br>
+            <input type="checkbox" name="toppings" value="2">Buffalo Chicken $2<br>
+            <input type="checkbox" name="toppings" value="2">Fried Potato Skins $2<br>
+            <input type="checkbox" name="toppings" value="4">BBQ Pork $4<br>
+            <input type="checkbox" name="toppings" value="2">Cheese Whiz $2<br>
+            <input type="checkbox" name="toppings" value="3">Jalapeno Poppers $3<br>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="">Special Requests</label>
+            <textarea class="form-control" type="text" name="" value=""placeholder="example: Extra Ranch!!!"></textarea>
+          </div>
+        </div>
+      </form>
+        <div class="col">
+          <div class="jumbotron" id="bottomjumbo">
+            <h2 id="price"></h2>
           </div>
           <button type="submit">Order, bro.</button>
-          </div>
-        </form>
-        <div class="jumbotron">
-          <h2 id="price"></h2>
         </div>
       </div>
     </div>

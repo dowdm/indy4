@@ -2,8 +2,14 @@ body {
   background-image: url("../img/background.png");
   background-size: cover;
 }
-button {
+#bottomjumbo{
   border-radius: 25px;
+}
+button {
+  background-color: black;
+  border-radius: 25px;
+  color: white;
+  float: right;
 }
 .form-check{
   background-color: green;
@@ -36,7 +42,6 @@ label {
   text-align: center;
 }
 #price{
-  display: none;
   text-align: center;
 }
 #title {
